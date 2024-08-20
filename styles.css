@@ -1,0 +1,164 @@
+body {
+    font-family: 'Courier New', Courier, monospace;    
+    margin: 0;
+    padding: 0;
+    background-color: #d6eec5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d6eec5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.typewriter h1 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    border-right: .15em solid white; /* The caret */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 10em; } /* Adjust width as per the length of the text */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:#82a03c;
+    color: black;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    background-color: #82a03c;
+}
+
+/* main {
+    padding: px;
+} */
+
+.section {
+    padding: 50px;
+    color: #82a03c;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin: 20px 0; */
+    /* border-radius: 10px; */
+}
+
+.section1 .section-content {
+    display: flex;
+    align-items: center;
+    color: #82a03c;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the space between image and text */
+}
+
+.section1 .section-image img {
+    width: 100%;
+    max-width: 500px; /* Adjust to fit your layout */
+    border-radius: 10px;
+}
+
+.section1 .section-text {
+    flex: 1;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#rotating-text {
+    transition: opacity 0.5s ease-in;
+}
+
+.section-text h1 {
+    display: inline-block;
+    font-size: 100px;
+    color: black;
+    font-style: italic;
+}
+
+.section2 {
+    background-color: #135b35;
+}
+
+.section3 {
+    background-color: #135b35;
+}
+
+.section4 {
+    background-color: #82a03c;
+    margin: auto;
+}
+
+footer {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
